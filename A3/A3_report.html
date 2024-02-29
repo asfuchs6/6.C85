@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Design
+		</h1>
+
+		<p>
+			<strong>Ariel Fuchs</strong> — <em>asfuchs@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Phase One: Sketching Visualizations</h2>
+			<h3>Question: How does the demographic of women change from 1900 to 2000?</h3>
+			<p>PLEASE NOTE: In my sketches I wrote 1990 but I meant to write the year 1900. The diagrams would otherwise not make sense since there is a large poplation disparity and only a 10-year span between each dataset. </p>
+
+      <figure>
+				<img src="images/graph1.png" height="600" width="650" alt="" />
+				<figcaption>
+					Scatterplot of the population of women in 1900 and 2000. While this first plot does a great job at giving an overview of what the general dataset looks like, I want to create a different visual that still explores the data but is more fun and creative. Instead of using small dots to indicate the population size, I wonder if I can create a graphic that is visually easy to understand while representing the data (literally). 
+				</figcaption>
+			</figure>
+
+      <figure>
+				<img src="images/graph2.png" height="800" width="700" alt="" />
+				<figcaption>
+          Female icon demonstrating the population of women in 1900 to 2000. Although I liked this idea of using color to represent different population sizes, in my next graphic, I thought I should try to use a more classic graphic style in order to visualize this data. I still wanted to explore the data without relying on simple chart types, ex. line graph and bar charts, so I decided to try a population pyramid chart which has a more dynamics to it.
+				</figcaption>
+			</figure> 
+      <figure>
+				<img src="images/graph3.png" height="500" width="650" alt="" />
+				<img src="images/graph3_rational.png" height="300" width="800" alt="" />
+				<figcaption>
+          Population Pyramid to show the demographic of women in 1900 verse 2000.
+				</figcaption>
+			</figure>
+
+      <h3>Reflection</h3>
+
+      <p>
+        After creating scatterplots, a colored diagram (I couldn't find the name of this type of plot), and a population pyramid chart, I can see the benefits and weaknesses of using different methods. A strength in scatterplots is that it is easy to plot discrete values and show trends overtime. Yet one drawback is that viewers may confuse apparent trends by connecting the dots when they shouldn't. A strength in the colored diagram is that it is easy and fast to identify larger populations based on the strength of the color. However, one drawback is that when comparing two different population sizes where one is drastically larger, it is going to cause one of the diagrams to be colored by the lightest bin size, removing any nuance within that population. Example: Since the 1900 population of women was significantly small than the 2000 population, most of the the 1900 diagram was colored in yellow, instead of a variety of colors. Lastly, a benefit to using the population chart is that you can directly compare each demographic and see trends within each year and across age groups. A drawback of the population pyramids is that it does not fully represent the entire population as it is only reflecting bins of certain ages. Useful visualzations features from this process were having gridlines, writing the actual value of data points, and color coding datasets. One chart that I would be interested in trying next is a bubble chart. Bubble charts can be colorful and are easy to visually compare data points so it would be interesting to try.
+      </p>
+
+		</section>
+
+		<section>
+			<h2>Phase Two: Final Design</h2>
+
+			<figure>
+				<img src="images/graph4.png" height="450" width="700" alt="" />
+				<figcaption>
+				Scatterplot of women in 1900 and 2000 based on population in age group. The X's represent women in 2000, and the circles represent women in 1900.
+				</figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<h2>Design Process & Design Decisions</h2>
+
+			<p>
+        Now that I had brainstormed and sketched potential graphics for the questions, "How does the demographic of women change from 1900 to 2000?", I was ready to plot it in Tableau. Originally, I wanted to attempt a bubble chart but it did not plot well given the dimensions: age, people, year, and sex. Therefore, I pivoted to try the scatterplot I did in Graph 1, but changed the texture to differentiate the year I was plotting (instead of differentiating by the color). I chose X's and circles because the shapes are distinct from one another and do not overlap. If the data did overlap more, I might revert to using color since the overlapping shapes might become hard to differentiate. I played around with the size of the X's and circles but this seemed to be the perfect medium. Too small and it was difficult to look at, but too big and it was also overwhelming to look at. I decided to label each data point so that users do not have to match up the values on the axis. Further, because the scale of the y-axis is in millions, not adding the labels would mean that users would have to estimate what each value is. This means more work for viewers and likely misreading datapoints, even if the overall trend is clear. The x-axis increments by 5 years which directly plots the data as is, instead of combining values when using graphs with bins. One aspect that is downplayed by my scattergraph is the actual size of the gap between the population of women in 1900 and 2000. I think that the graphic would explicitly need to make that calculation for viewers, and maybe overlap the datapoints by using bars. 
+      </p>
+
+      Your writeup should also include a final paragraph reflecting on how phase one may or may not have influenced your design for this assignment. For example, you could discuss to what extent sketching helped inform your final design. What aspects of your sketches did you keep or discard, and why did you make those decisions? Or, how did your sketches help you change course?
+      <h3>Reflection</h3>
+
+      <p>
+        Doing sketches to first explore the data definitely influenced the visualization I created for my final design. Because I was able to explore different ideas, I came away with good and bad aspects in making visualizations. If I had directly used Tableau, I would have been limited to specific graphs (especially because I am still learning how to use it).
+      </p>
+		</section>
+	</main>
+</body>
+</html>
